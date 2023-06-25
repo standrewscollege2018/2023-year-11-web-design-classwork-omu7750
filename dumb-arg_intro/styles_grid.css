@@ -1,0 +1,32 @@
+/* Reset all spacing to 0 */
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto.ttf");    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.sidebar {
+
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.maincontent {
+    padding: 30px;
+    background-image: url('grandent.png');
+    color: black;
+}
+

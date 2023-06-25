@@ -1,0 +1,224 @@
+/* This is our stylesheet */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto.ttf");    
+}
+
+@font-face {
+    font-family: Roboto_BIG;
+    src: url("roboto2.ttf");    
+}
+
+/* We can redefine HTML tags */
+body {
+    background-color: rgb(24, 26, 45);  
+}
+
+h1{
+    color: rgb(24, 26, 45);
+    margin-bottom: 20px;
+    font-family: Roboto_BIG;
+}
+
+h2{
+    color: rgb(24, 26, 45);
+    font-family: Roboto_BIG;
+}
+
+h3 {
+    color: rgb(33, 51, 105);
+    font-family: Roboto_BIG;
+}
+
+h4 {
+    color: rgb(31, 76, 128);
+    font-family: Roboto_BIG;
+    margin-top: 20px;
+}
+
+p{
+    color: rgb(18, 17, 24);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Roboto;
+}
+
+ul{
+    color: rgb(18, 17, 24);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-family: Roboto;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(18, 17, 24);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Roboto;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(18, 17, 24);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Roboto;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(18, 17, 24);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Roboto;
+}
+
+.events {
+    margin: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.maincontent {
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.maincontent img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-container {
+    background-color: rgb(239, 245, 246);
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.maincontent img {
+    width: 1fr;
+    height: auto;
+}
+
+.navbar {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card {
+    padding-right: 20px;
+}
+
+.content-container {
+    background-color: rgb(239, 245, 246);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.socials-container {
+    background-color: rgb(204, 211, 214);
+    padding-left: 40%;
+    padding-right: 40%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.socials-container img {
+    max-width: 75%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .banner-container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .navbar {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .socials-container {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .content-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .banner-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .socials-container {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+
+}

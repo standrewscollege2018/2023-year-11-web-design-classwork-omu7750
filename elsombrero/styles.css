@@ -1,0 +1,88 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto.ttf");    
+}
+
+@font-face {
+    font-family: Roboto_BIG;
+    src: url("roboto2.ttf");    
+}
+
+@font-face {
+    font-family: Mexicana;
+    src: url("Mexicana.ttf");    
+}
+
+body {
+    background-color: #F5E9E2;
+}
+
+.banner-container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.logo {
+    background-color: #A93135;
+    padding: 20px;
+    color: #F5E9E2;
+}
+
+h1 {
+    font-family: Mexicana;
+}
+
+h2 {
+    font-family: Roboto_BIG;
+}
+
+.navbar {
+    background-color: #0b0014;
+    padding-top: 45px;
+    text-align: center;
+    padding-left: 65%;
+    font-family: Roboto;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #F5E9E2;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+.filler-green {
+    background-color: #66A182;
+    padding:25px;
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:40px;
+}
+
+.video {
+    font-family: Roboto;
+}
+
+.blurb {
+    font-family: Roboto;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.menu-link {
+    background-color: #437B6D;
+}
+
